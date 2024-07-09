@@ -1,0 +1,54 @@
+.flex-container {
+    width: 700px;
+    height: 200px;
+    background-color: rgb(0, 102, 255);
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    /* 
+    플렉스 박스 레이아웃 구성 요소 :main axis, cross axis, flex container, flex item
+
+    ＊flex container 속성
+    요소의 방향 : flex-direction 
+    flex-direction: row;
+    
+    flex-direction: row-reverse; 
+    flex-direction: column-reverse; 
+    flex-direction: column; 
+    
+    제한된 영역을 넘었을 때 줄바꿈 : wrap
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+
+    flex-flow: direction + wrap
+
+    * flex item 속성
+    가로방향(x축) 아이템 정렬
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    
+    세로방향(y축) 아이템 정렬
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+    */
+
+}
+
+.flex-item {
+    color: white;
+    background-color: rgb(255, 48, 48);
+}
+
+.flex-item:nth-child(2n) {
+    background-color: rgb(228, 112, 112);
+}

@@ -1,0 +1,145 @@
+/* font-size
+- 절댓값 px, %, em은 부모 요소에 따라 상대적으로 변한다.
+- rem은 웹브라우저의 기본 폰트 사이즈를 기준으로 변경(요새 쓰는 트렌드) */
+
+/* font-weight 굵기
+1. 숫자 표기법 : 100~900
+2. 키워드 표기법 : lighter, normal, bold, bolder
+- lighter, bolder는 부모 요소에 상대적인 값
+- normal : 400 / bold : 700 --> 주로 씀 */
+.font-size p:first-child {
+    font-weight: bold;
+}
+
+/* font-style - normal. italic : 기울임, oblique 기울임 */
+.italic {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: grey;
+}
+
+.normal {
+    font-size: 1.5rem;
+    font-style: normal;
+    color: chocolate;
+}
+
+.oblique {
+    font-size: 2rem;
+    font-style: oblique;
+    color: indianred;
+}
+
+/* text-align : 글자 위치 정렬(left, right, center, justify) */
+.font-size>p:nth-child(2) {
+    text-align: justify;
+}
+
+/* text-decoration
+1. none : 텍스트 장식을 모두 지움
+2. line-through : 텍스트 중간을 관통하는 선 그음
+3. overline : 텍스트 위에 선 그음
+4. underline :텍스트 아래에 선 그음 */
+.font-option p> :last-child {
+    text-decoration: none;
+}
+
+.font-option> :nth-child(2) {
+    text-decoration: line-through;
+}
+
+.font-option> :nth-child(3) {
+    text-decoration: overline;
+}
+
+.font-option> :nth-child(4) {
+    text-decoration: underline;
+}
+
+/* letter-spacing : 문자의 자간 설정 */
+.font-option :nth-child(5) {
+    letter-spacing: 20px;
+}
+
+/* line-height : 줄간격
+normal, 숫자, 퍼센트, 크기로 조절 가능 */
+.font-option :nth-child(6) {
+    line-height: 5px;
+}
+
+/* boxmodel */
+/* margin : 요소와 요소 사이의 간격(외부 여백) */
+.boxmodel .box1 {
+    border: solid 1px gray;
+}
+
+.boxmodel .box2 {
+    border: solid 1px gray;
+}
+
+.boxmodel .box3 {
+    border: solid 1px gray;
+    content: 20%;
+}
+
+.boxmodel .box4 {
+    border: solid 1px gray;
+    margin: 5%;
+    display: block;
+}
+
+.boxmodel .box5 {
+    border: solid 1px gray;
+    padding: 5%;
+}
+
+/* boxmodel2 */
+.boxmodel2 .box_1 {
+    /* rgba(0, 0, 0, 0.3): 맨 뒤는 투명도 조절 값(0.3으로 조정) */
+    border-color: rgba(20, 155, 155, 0.3);
+    border-width: 5px;
+    border-style: dashed;
+}
+
+.boxmodel2 .box_2 {
+    margin: 10px 0 50px 0;
+    border-color: rgba(15, 49, 49, 0.3);
+    border-width: 7px;
+    border-style: inset;
+}
+
+.boxmodel2 .box_3 {
+    margin: 10px 0 50px 0;
+    border-color: rgba(29, 106, 156, 0.7);
+    border-width: 7px;
+    border-style: outset;
+}
+
+.boxmodel2 .box_4 {
+    border-color: rgba(191, 62, 202, 0.178);
+    border-width: 10px;
+    margin: 5%;
+    border-style: groove;
+}
+
+.boxmodel2 .box_5 {
+    border-color: rgba(234, 0, 255, 0.781);
+    border-width: 10px;
+    padding: 5%;
+    /* border-style : 각 변 스타일 다르게 지정 가능 */
+    border-style: dotted;
+    background-color: rgb(252, 213, 240);
+}
+
+.boxmodel2 .box_6 {
+    border: 20px rgb(226, 104, 104);
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    border-style: double;
+    margin: 10px 0 10px 0;
+    padding: 20%;
+    background-image: url('/images/dog.jpg');
+    background-position: -610px;
+    background-attachment: fixed;
+}
