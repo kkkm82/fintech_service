@@ -1,0 +1,35 @@
+.transform, .transform2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* transform : 요소에 특정 변형 효과 지정(확대, 이동, 축소, 기울임)
+1. translate(x, y) : 요소를 현재 위치에서 x(x축)와 y(y축)만큼 이동
+2. translateX(n) : 요소를 현재 위치에서 n만큼 x축으로 이동
+3. translateY(n) : 요소를 현재 위치에서 n만큼 y축으로 이동
+4. scale(x, y) : 요소를 x(x축)와 y(y축)만큼 확대 또는 축소
+5. scaleX(n) : 요소를 n만큼 x축으로 확대 또는 축소
+6. scaleY(n) : 요소를 n만큼 y축으로 확대 또는 축소
+7. skew(xdeg, ydeg) : 요소를 x축과 y축으로 xdeg, ydeg(각도)만큼 기울임
+8. skewX(deg) : 요소를 deg(각도)만큼 x축 방향으로 기울임
+9. skewY(deg) : 요소를 주어진 deg(각도)만큼 y축 방향으로 기울임
+10. rotate(deg) : 요소를 deg(각도)만큼 회전 */
+
+.transform:hover {
+    transform:translate(100px, 200px);
+}
+
+.transform:active {
+    transform: rotate(270deg);
+    background-color: goldenrod;
+}
+
+.transform2:hover {
+    transform: rotate(120deg);
+    transform-origin: bottom right;
+    background-color: palevioletred;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!--head와 body는 형제 관계-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech-Service</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body class="pink" style="background-color: rgba(206, 235, 153, 0.466);">
+    <h1>hi hi hi hi hi</h1>
+    <h2>hi hi hi hi hi</h2>
+    <h3>hi hi hi hi hi</h3>
+    <h4>hi hi hi hi hi</h4>
+    <h5>hi hi hi hi hi</h5>
+    <h6>hi hi hi hi hi</h6>
+    <p>hi</p> <!--p 태그 문단 본문 작성시 사용-->
+    <a href="https://comic.naver.com/webtoon/detail?titleId=804160&no=28&week=fri" target="_self"><img
+            src="dog.jpg"></a><br>
+    <a href="https://edu.goorm.io/" target="_blank" title="구름EDU로 가는 링크" alt="구름EDU"><img src="cloud.jpg"
+            style="width: 274px;;"></a>
+    <a href="https://edu.goorm.io/" target="_blank" title="구름EDU로 가는 링크" alt="구름EDU"><img src="/images/dog.jpg"
+            style="width: 274px;;"></a>
+    <a href="https://edu.goorm.io/" target="_blank" title="구름EDU로 가는 링크" alt="구름EDU"><img src=".\dog.jpg"
+            style="width: 274px;;"></a>
+    <blockquote style="color:red;">
+        콜라 싫어 싫어! 홍차 싫어 싫어!
+        새까만 커피, Oh no!
+        핫초코 싫어 싫어! 사이다 싫어 싫어!
+        새하얀 우유, Oh yes!
+        맛 좋고 색깔 좋고 영양도 최고
+        깔끔한 내 입맛엔 우유가 딱이야!
+        단백질 칼슘도 왕 비타민 가득
+        건강한 내 입맛엔 우유가 딱이야!
+        우유 좋아 우유 좋아 우유 주세요
+        우유 좋아 우유가 좋아 세상에서 제일 좋아
+        <br><br>
+        <del>M.I.L.K 또 M.I.L.K</del>
+        <sup>영어로 밀크 Oh, 우유</sup>
+        <sub>공부 하다 한 잔! 게임 하다 한 잔!</sub><br><br>
+        <div class="milk" style="width:200px;">"항상 내 곁에 Oh, 우유
+            우유는 우유병에 먹어야 제맛
+            신선한 우유만이 진짜 우유야
+            우유 먹고 튼튼해져 얼른 자라서
+            새 나라 새 일꾼이 돼 보렵니다
+            <span style="color: blue;">우유 좋아 우유 좋아 우유 주세요</span>
+            우유 좋아 우유가 좋아 세상에서 제일 좋아
+            우유 좋아 우유 좋아 우유 주세요
+            우유 좋아 우유가 좋아 세상에서 제일 좋아
+        </div>
+    </blockquote>
+
+    <div class="milk2" style="background-color: rgb(243, 188, 188);">
+        <h1>우유 종류</h1>
+        <ul>
+            <li>우유</li>
+            <li>흰우유</li>
+            <li>초코우유</li>
+        </ul>
+        <ol>
+            <li>딸기우유</li>
+            <li>바나나우유</li>
+            <li>메론우유</li>
+        </ol>
+    </div>
+    <div class="tomato" style="background-color: rgb(255, 76, 76);">
+        <strong>울퉁불퉁 멋진 몸매에</strong>
+        빠알간 옷을 입고
+        새콤달콤 향내 풍기는
+        멋쟁이 토마토 토마토
+        나는야 주스 될 거야
+        나는야 케첩 될 거야
+        나는야 춤을 출 거야
+        뽐내는 토마토 토마토
+        <em>울퉁불퉁 멋진 몸매에</em>g
+        빠알간 옷을 입고
+        새콤달콤 향내 풍기는
+        멋쟁이 토마토 토마토
+        나는야 주스 될 거야
+        나는야 케첩 될 거야
+        나는야 춤을 출 거야
+        뽐내는 토마토 토마토
+    </div>
+    <br><br><br>
+
+    <hr width="100%" style="color: red; border: solid 3px;">
+    <br><br><br>
+    <!-- form : 태그 사용자로부터 데이터를 입력받아 서버로 전송할 때 사용 -->
+    <!--form action="서버 주소" method="get/post"-->
+    <input type="text" placeholder="text">
+    <form>
+        <p>
+            <strong>아이디</strong>
+            <input type="text" name="name" value="아이디 입력">
+        </p>
+        <p>
+            <strong>비밀번호</strong>
+            <input type="password" name="password" value="비밀번호 입력" placeholder="비밀번호를 입력하세요.">
+        </p>
+        <p>
+            <strong>성별</strong>
+            <input type="radio" name="gender" value="M" disabled>남자
+            <input type="radio" name="gender" value="F">여자
+        </p>
+        <p>
+            <strong>응시분야</strong>
+            <input type="checkbox" name="part" value="eng" checked>영어
+            <input type="checkbox" name="part" value="math">수학
+        </p>
+        <select name="train" id="train" size="5" multiple>
+            <optgroup label="열차 종류">
+                <option value="ktx">KTX</option>
+                <option value="itx">ITX 새마을</option>
+                <option value="mugung">무궁화호</option>
+            </optgroup>
+            <optgroup label="열차 호선">
+                <option value="train2" selected>2호선</option>
+                <option value="train1">1호선</option>
+                <option value="train3">3호선</option>
+            </optgroup>
+        </select>
+        <p>month : <input type="month"></p>
+    </form>
+    <hr width="100%" style="color: rgb(245, 165, 165); border: solid 1px;">
+    <form action="#" method="post">
+        <fieldset>
+            <legend>블로그 글쓰기</legend>
+            <p>
+                <label for title>제목
+                    <input type="text" id="title" name="title">
+                </label>
+            </p>
+            <p>
+                <label for title>내용
+                    <textarea name=desc id="desc" maxlength="10"></textarea>
+                </label>
+            </p>
+        </fieldset>
+    </form>
+    <br>
+
+    <button type="submit" style="background-color: rgb(189, 189, 241);border-radius: 40%;">제출</button>
+    <p>
+        <input type="submit" value="제출2" style="border: solid 3px;">
+    </p>
+
+
+
+
+    <!-- 0702 -->
+
+
+
+
+    <fieldset>
+        <legend>좋아하는 과일</legend>
+        <input type="checkbox" id="banana" name="banana" value="banana">
+        <label for="banana">banana</label><br>
+        <input type="checkbox" id="apple" name="apple" value="apple" checked>
+        <label for="apple">apple</label><br>
+        <input type="checkbox" id="orange" name="orange" value="orange">
+        <label for="orange">orange</label><br>
+    </fieldset>
+
+    <!-- 표 만들기 -->
+    <table border="1px" style="background-color: rgb(203, 233, 121);">
+        <caption style="background-color:rgb(142, 238, 118); border-radius: 50%;">Frontend</caption>
+        <col style="width: 120px;">
+        <colgroup span="2" style="width: 200px;"></colgroup>
+        <col style="width: 300px;">
+        <thead>
+            <tr>
+                <th>html, 1행, 1열</th>
+                <th>css, 1행, 2열</th>
+                <th>js, 1행, 3열</th>
+                <th>react, 1행, 4열</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2행 1열</td>
+                <td>2행 2열</td>
+                <td>2행 3열</td>
+                <td>2행 4열</td>
+            </tr>
+            <tr>
+                <td>3행 1열</td>
+                <td>3행 2열</td>
+                <td>3행 3열</td>
+                <td rowspan="2">3행 4열</td>
+            </tr>
+            <tr>
+                <td>4행 1열</td>
+                <td>4행 2열</td>
+                <td>4행 3열</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><b>총 행</b></td>
+                <td colspan="3">4행 / 12칸</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- thead, tfoot, tbody 시맨틱 태그 : HTML 테이블을 구조화하여 가독성을 높이고, 접근성 및 SEO를 개선하며, CSS나 JavaScript와 같은 스타일링 및 스크립트 작업에 편의성을 제공,
+    HTML 문서의 유효성을 유지하는 데 도움을 줌 -->
+
+    <!-- 태그 종류에 상관없이 사용하는 글로벌 속성 -->
+    <!-- style 해당 태그에만 css 스타일 적용, 우선순위 가장 높음 -->
+     <!-- id 유일한 값 -->
+     <p class="title" id="bookname">책제목</p>
+     <!-- class : 묶음 -->
+      <p class="title"  text-align: center>제목1</p>
+      <p class="odd">내용 1 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius officiis maxime similique praesentium blanditiis rerum, earum vitae corporis. Sint natus eos expedita modi, assumenda perspiciatis amet odit numquam id!</p>
+      <p class="title" text-align: center;>제목2</p>
+      <p class="even">내용 2 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius officiis maxime similique praesentium blanditiis rerum, earum vitae corporis. Sint natus eos expedita modi, assumenda perspiciatis amet odit numquam id!</p>
+      <p class="title"  text-align: center;>제목3</p>
+      <p class="odd">내용 3 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius officiis maxime similique praesentium blanditiis rerum, earum vitae corporis. Sint natus eos expedita modi, assumenda perspiciatis amet odit numquam id!</p>
+      <p class="title" text-align: center;>제목4</p>
+      <p class="even">내용 4 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius officiis maxime similique praesentium blanditiis rerum, earum vitae corporis. Sint natus eos expedita modi, assumenda perspiciatis amet odit numquam id!</p>
+      <p class="title"  text-align: center;>제목5</p>
+      <p class="odd">내용 5 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius officiis maxime similique praesentium blanditiis rerum, earum vitae corporis. Sint natus eos expedita modi, assumenda perspiciatis amet odit numquam id!</p>
+      <p class="title" text-align: center;>제목6</p>
+      <p class="even">내용 6 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius officiis maxime similique praesentium blanditiis rerum, earum vitae corporis. Sint natus eos expedita modi, assumenda perspiciatis amet odit numquam id!</p>
+      <p class="title"  text-align: center;>제목7</p>
+      <p class="odd">내용 7 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius officiis maxime similique praesentium blanditiis rerum, earum vitae corporis. Sint natus eos expedita modi, assumenda perspiciatis amet odit numquam id!</p>
+      <p class="title" text-align: center;>제목8</p>
+      <p class="even" hidden>내용 8 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius officiis maxime similique praesentium blanditiis rerum, earum vitae corporis. Sint natus eos expedita modi, assumenda perspiciatis amet odit numquam id!</p>
+    </body>
+
+
+</html>

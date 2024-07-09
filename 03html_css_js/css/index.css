@@ -1,0 +1,19 @@
+.title {
+    color: rgb(70, 126, 247);
+    text-align: center;
+}
+
+.odd {
+    color: orange;
+    text-align: left;
+}
+
+.even {
+    color: brown;
+    text-align: right;
+}
+
+#bookname {
+    text-decoration: dashed;
+    font-size: xx-large;
+}
